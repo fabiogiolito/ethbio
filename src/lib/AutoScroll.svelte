@@ -19,7 +19,7 @@
 
 <!-- Container -->
 <div
-  class="pointer-events-none w-screen h-screen fixed z-10 inset-0 overflow-hidden"
+  class="pointer-events-none w-screen h-available fixed z-10 inset-0 overflow-hidden"
   style="
     filter: blur({ transition * 40 }px);
     opacity: { 0.5 - (0.5 * transition)};

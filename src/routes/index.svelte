@@ -50,7 +50,7 @@
 >
 
   <!-- Fixed content (borders) -->
-  <div class="w-screen h-screen fixed inset-0 z-30 border-secondary text-secondary border-[16px] pointer-events-none flex flex-col">
+  <div class="w-screen h-available fixed inset-0 z-30 border-secondary text-secondary border-[16px] pointer-events-none flex flex-col">
     <div class="flex justify-between">
       <!-- Corner Top Left -->
       <svg class="flex-shrink-0 w-4 h-4 lg:w-8 lg:h-8" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -123,12 +123,12 @@
 
   <!-- Scrollable content -->
   <div
-    class="relative z-20 w-screen h-screen overflow-hidden overflow-y-auto scroll-snap"
+    class="relative z-20 w-screen h-available overflow-hidden overflow-y-auto scroll-snap"
     on:scroll={handleScroll}
   >
 
     <!-- User profile -->
-    <section class="w-screen h-screen grid place-items-center p-10">
+    <section class="w-screen h-available grid place-items-center p-10">
       <div class="text-center space-y-10 drop-shadow-2xl z-20">
         <img src="avatar.png" alt="avatar" class="inline-block w-40 h-40 rounded-full bg-white">
         <h1 class="text-secondary text-5xl xl:text-[100px] font-bold">Vitalik Buterin</h1>
@@ -136,7 +136,7 @@
     </section>
     
     <!-- NFT gallery -->
-    <section class="relative w-screen min-h-screen z-20 overflow-hidden grid place-items-center">
+    <section class="relative w-screen min-h-available z-20 overflow-hidden grid place-items-center">
       <Gallery images={nfts} />
     </section>
   </div>

@@ -10,6 +10,11 @@ html, body {
 }
 
 @layer utilities {
+  .h-available {
+    height: calc(100vh - env(safe-area-inset-bottom));
+    max-height: -webkit-fill-available;
+  }
+
   .scroll-snap {
     scroll-snap-type: y mandatory;
   }
