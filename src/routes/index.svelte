@@ -23,8 +23,7 @@
   ]
 
   let theme;
-  $: if (themes) theme = themes[Math.floor(Math.random() * themes.length)]
-  $: console.log(theme);
+  $: if (themes) themes[Math.floor(Math.random() * themes.length)];
 
   let scrollY = 0;
   let scrollPercent = 0;
@@ -36,6 +35,10 @@
     isScrolled = scrollPercent > 0.5;
   }
 </script>
+
+<svelte:head>
+  <meta name="theme-color" content="{theme[1]}">
+</svelte:head>
 
 <div class="font-mono bg-primary text-white"
   style="

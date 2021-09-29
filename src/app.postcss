@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  height: calc(100vh - env(safe-area-inset-bottom));
+}
+
 @layer utilities {
   .scroll-snap {
     scroll-snap-type: y mandatory;
