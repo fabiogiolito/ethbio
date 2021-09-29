@@ -37,7 +37,9 @@
 </script>
 
 <svelte:head>
-  <meta name="theme-color" content="{theme[1]}">
+  {#if theme}
+    <meta name="theme-color" content="{theme[1]}">
+  {/if}
 </svelte:head>
 
 <div class="font-mono bg-primary text-white"
