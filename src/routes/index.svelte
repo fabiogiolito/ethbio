@@ -23,7 +23,7 @@
   ]
 
   let theme;
-  $: if (themes) themes[Math.floor(Math.random() * themes.length)];
+  $: if (themes) theme = themes[Math.floor(Math.random() * themes.length)]
 
   let scrollY = 0;
   let scrollPercent = 0;
