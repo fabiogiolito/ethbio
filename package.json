@@ -14,10 +14,9 @@
 		"svelte-preprocess": "^4.9.4",
 		"autoprefixer": "^10.3.4",
 		"cssnano": "^5.0.8",
-		"tailwindcss": "^2.2.15"
+		"tailwindcss": "^2.2.15",
+		"@sveltejs/adapter-vercel": "next"
 	},
 	"type": "module",
-	"dependencies": {
-		"svelte-masonry": "0.0.18"
-	}
+	"dependencies": {}
 }
