@@ -10,10 +10,10 @@
   }
 </script>
 
-<div class="container mx-auto py-10">
+<div class="container mx-auto pt-[12vh] pb-[200px]">
 
   <!-- Grid -->
-  <div class="grid grid-cols-2 gap-4 p-[10vw] lg:grid-cols-4 lg:gap-10">
+  <div class="grid grid-cols-2 gap-4 px-[10vw] lg:grid-cols-4 lg:gap-10">
     {#each images as title, index}
       <a
         href="#link"

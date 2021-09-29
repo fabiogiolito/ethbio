@@ -136,7 +136,7 @@
     </section>
     
     <!-- NFT gallery -->
-    <section class="relative w-screen min-h-screen z-20 overflow-hidden grid place-items-center py-24">
+    <section class="relative w-screen min-h-screen z-20 overflow-hidden grid place-items-center">
       <Gallery images={nfts} />
     </section>
   </div>
