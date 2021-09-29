@@ -3,8 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  height: calc(100vh - env(safe-area-inset-bottom));
+html, body {
+  overflow: hidden;
+  height: 100%;
+  max-height: -webkit-fill-available;
 }
 
 @layer utilities {
