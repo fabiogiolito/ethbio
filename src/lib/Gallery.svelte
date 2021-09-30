@@ -28,10 +28,10 @@
 
   <!-- Selected -->
   {#if selectedImage}
-    <div class="fixed w-screen h-available inset-0 grid place-items-center z-30">
-      <button transition:fade={{ duration: 100 }} class="absolute inset-0 w-full h-full bg-black bg-opacity-50 backdrop-blur transition-all" on:click={() => selectImage(null)} />
+    <button on:click={() => selectImage(null)} class="fixed w-screen h-available inset-0 grid place-items-center z-30">
+      <div transition:fade={{ duration: 100 }} class="absolute inset-0 w-full h-full bg-black bg-opacity-50 backdrop-blur transition-all" />
       <img transition:fly={{ y: 40, duration: 250 }} class="relative z-10 drop-shadow-2xl" src="/nfts/{selectedImage + 1}.png" alt="nft {selectedImage + 1}">
-    </div>
+    </button>
   {/if}
 
 </div>
