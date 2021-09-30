@@ -37,6 +37,7 @@
 </script>
 
 <svelte:head>
+  <title>Vitalik Buterin • @v_b</title>
   {#if theme}
     <meta name="theme-color" content="{theme[1]}">
   {/if}
