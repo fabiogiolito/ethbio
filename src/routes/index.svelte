@@ -50,7 +50,7 @@
 >
 
   <!-- Fixed content (borders) -->
-  <div class="w-screen h-available fixed inset-0 z-40 border-secondary text-secondary border-[16px] pointer-events-none flex flex-col">
+  <div class="w-screen h-available fixed inset-0 z-40 border-secondary text-secondary border-[8px] md:border-[16px] pointer-events-none flex flex-col">
     <div class="flex justify-between">
       <!-- Corner Top Left -->
       <svg class="flex-shrink-0 w-4 h-4 lg:w-8 lg:h-8" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -66,7 +66,7 @@
             <img src="/avatar.png" class="block rounded-full w-10 h-10 ring ring-white ring-opacity-25" alt="avatar">
             <div class="flex flex-col">
               <span>@V_B</span>
-              <span class="text-xs opacity-50">0xa574…c87ffa1</span>
+              <span class="text-xs opacity-50">0x71C7…976F</span>
             </div>
           </div>
         </div>
@@ -105,26 +105,26 @@
   <!-- Bottom fixed content -->
   <div class="w-full fixed bottom-0 inset-x-0 z-30 bg-gradient-to-t from-primary to-transparent flex justify-between">
     <!-- Tokens -->
-    <div class="pointer-events-auto text-white m-7 mb-14 flex flex-col">
+    <div class="pointer-events-auto text-white m-3 mb-10 md:m-7 md:mb-14 flex flex-col">
       <span class="text-sm mx-2 opacity-50">Tokens</span>
       <a href="#tokens" class="flex -space-x-2 hover:bg-white hover:bg-opacity-30 transition-colors p-2 rounded-full">
         {#each Array(4) as _, index}
-          <img class="rounded-full w-10 h-10 border-2 border-primary" src="/tokens/{index+1}.png" alt="token {index+1}">
+          <img class="rounded-full w-8 h-8 md:w-10 md:h-10 border-2 border-primary" src="/tokens/{index+1}.png" alt="token {index+1}">
         {/each}
-        <span class="flex-shrink-0 w-10 h-10 bg-secondary text-primary flex items-center justify-center rounded-full border-2 border-primary text-xs font-bold">
+        <span class="flex-shrink-0 w-8 h-8 md:w-10 md:h-10 bg-secondary text-primary flex items-center justify-center rounded-full border-2 border-primary text-xs font-bold">
           <span class="opacity-50">+8</span>
         </span>
       </a>
     </div>
 
     <!-- Friends -->
-    <div class="pointer-events-auto text-white m-7 mb-14 flex flex-col">
+    <div class="pointer-events-auto text-white m-3 mb-10 md:m-7 md:mb-14 flex flex-col">
       <span class="text-sm mx-2 opacity-50">Friends</span>
       <a href="#tokens" class="flex -space-x-2 hover:bg-white hover:bg-opacity-30 transition-colors p-2 rounded-full">
         {#each Array(4) as _, index}
-          <img class="rounded-full w-10 h-10 border-2 border-primary" src="/friends/{index+1}.png" alt="token {index+1}">
+          <img class="rounded-full w-8 h-8 md:w-10 md:h-10 border-2 border-primary" src="/friends/{index+1}.png" alt="token {index+1}">
         {/each}
-        <span class="flex-shrink-0 w-10 h-10 bg-secondary text-primary flex items-center justify-center rounded-full border-2 border-primary text-xs font-bold">
+        <span class="flex-shrink-0 w-8 h-8 md:w-10 md:h-10 bg-secondary text-primary flex items-center justify-center rounded-full border-2 border-primary text-xs font-bold">
           <span class="opacity-50">+4</span>
         </span>
       </a>
@@ -141,7 +141,7 @@
     <section class="w-screen h-available grid place-items-center">
       <div class="text-center space-y-10 drop-shadow-2xl z-20 p-[10vw]">
         <h1 class="text-secondary text-5xl xl:text-[100px] font-bold">Vitalik Buterin</h1>
-        <p class="text-xs lg:text-base">Curabitur suscipit lectus lorem, convallis convallis est blandit quis. Nunc sagittis at leo eu faucibus. Maecenas rutrum lorem eros, ut sollicitudin urna blandit vel.</p>
+        <p class="max-w-2xl mx-auto text-xs lg:text-base">Curabitur suscipit lectus lorem, convallis convallis est blandit quis. Nunc sagittis at leo eu faucibus. Maecenas rutrum lorem eros, ut sollicitudin urna blandit vel.</p>
         <ul class="flex items-center justify-center space-x-8">
           <li><a class="w-10 h-10 bg-white bg-opacity-0 transition-colors duration-200 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary" href="#Twitter"><svg class="w-6 h-6" fill="currentColor" role="img" viewBox="0 0 24 24"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a></li>
           <li><a class="w-10 h-10 bg-white bg-opacity-0 transition-colors duration-200 rounded-full flex items-center justify-center hover:bg-secondary hover:text-primary" href="#Twitch"><svg class="w-6 h-6" fill="currentColor" role="img" viewBox="0 0 24 24"><title>Twitch</title><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/></svg></a></li>
